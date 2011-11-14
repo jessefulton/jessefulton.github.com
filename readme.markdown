@@ -1,0 +1,1 @@
+Copied from [https://github.com/chamerling/jekyll-skeleton]

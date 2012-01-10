@@ -108,46 +108,29 @@ em { font-style:italic; }
 
 acronym, abbr { border-bottom: 1px dashed; cursor: help; }
 blockquote { border-left: 1px solid; padding-left: 16px; font-style: italic; font-family: Georgia, "Times New Roman", Times, serif; }
-a:link { text-decoration:none; color: #29e8ff; background-color: #1a1a1a; }
-a:visited { text-decoration:none; color: #29e8ff; background-color: transparent; }
-a:hover { text-decoration:none; color: #ff3b8b; background-color: #000; }
+a:link { text-decoration:none; }
+a:visited { text-decoration:none; }
+a:hover { text-decoration:none; }
 a:active {}
 
-h2 a:link, h2 a:visited, h2 a:hover, h2 a:active { background-color: transparent; }
+
 
 #header { 
 	width: 100%;
 	margin: 0 auto;
-	/* border-bottom: 10px double #1a1a1a; */
-
-	/*
-	position:relative;
-	top: -75px;
-	*/
 }
 
 
 #wrapper { 
 	width: 840px;
 	margin: 48px auto 0;
-		/* background: transparent url(images/staticwide.png) repeat-y scroll center center; */
-		
-	/*background-color: #14050c;*/
-	color: #d1d1d1;
-	
 	text-align:left;
-	/*
-	border-left: 10px double #ffffa9;
-	border-right: 10px double #ffffa9;
-	*/
 	position:relative;
-
-	}
+}
 
 	
 	
 #logo {
-/*_display:none;*/
 	height: 64px;
 	width: 580px;
 	float:right;
@@ -167,14 +150,12 @@ h2 a:link, h2 a:visited, h2 a:hover, h2 a:active { background-color: transparent
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Myriad Pro", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	/* font-variant: small-caps; */
 	padding-left: 8px;
 }
 
 
 h1 {
 	background-color:transparent;
-	color:#D1D1D1;
 	font-size:48px;
 	line-height: 48px;
 	margin:8px 0 16px 0;
@@ -183,14 +164,8 @@ h1 {
 
 h2 { font-size: 32px; line-height: 32px; padding: 0; margin: 32px 0 16px 0; }
 
-h3 { color: #ffffa9; background-color: #1a1a1a; }
-h4, h5, h6 { color: #d1d1d1; background-color: #14050c; }
-
 
 #header h1 {
-	color: #ffffa9;
-	background-color: #14050c;
-	/* padding-top: 1ex; */
 	font-size: 104px;
 	padding: 8px 32px;
 	display:inline;
@@ -199,8 +174,6 @@ h4, h5, h6 { color: #d1d1d1; background-color: #14050c; }
 #header h2 {
 	padding-top: 56px;
 	padding: 130px;
-	color: #ffffa9;
-	/*text-align:right;*/
 	padding:0;
 	position:relative;
 	display:inline;
@@ -208,17 +181,6 @@ h4, h5, h6 { color: #d1d1d1; background-color: #14050c; }
 }
 
 .default-index-index #main .content { text-align: right; height: 580px; padding-right:320px; width:504px; background: #000 url('images/name-pixels-com.png') no-repeat scroll 100% 0; }
-
-/*
-.default-index-index #main .content { text-align: right; height: 448px; padding-right:352px; width:472px; background: #000 url('images/name-pixels.png') no-repeat scroll bottom right; }
-.default-index-index #main .content { 
-	text-align: right;
-	height: 464px;
-	padding-right:352px;
-	width:472px;
-	background: #000000 url(images/name-pixels-squared.png) no-repeat scroll 576px 50%;
-}
-*/
 
 .default-index-index .intro { margin-top: -8px; margin-top: 24px; }
 .default-index-index h1, .default-index-index p {
@@ -233,17 +195,6 @@ h4, h5, h6 { color: #d1d1d1; background-color: #14050c; }
 	font-size: 48px; line-height: 64px;
 	line-height: 112px;
 }
-
-/*
-.default-index-index #main .content {
-background:#000000 url(images/name-pixels.png) no-repeat scroll left bottom;
-padding-left:320px;
-padding-right: 0;
-width:520px;
-text-align: left;
-}
-*/
-
 
 .default-index-index .intro { margin-top: 25px; }
 .default-index-index .name { margin-bottom: -6px; }
@@ -541,4 +492,3 @@ padding:0;
     list-style-position: inside;
     list-style-type: square;
 }
-

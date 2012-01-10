@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<title></title>
+		<meta name="description" content="" />
+
+		<link href="css/structure.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/color.css" media="screen" rel="stylesheet" type="text/css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.hover').bind('touchstart touchend', function(e) {
+					e.preventDefault();
+					$(this).toggleClass('hover_effect');
+				});
+			});
+		</script>
+		<style type="text/css">
+			#intro, #intro nav { width: 100%; height: 100%; position: fixed; z-index: 500; background-color: #000; }
+			#intro .portfolio
+			, #intro .projects
+			, #intro .home
+			, #intro .blog { width: 50%; height: 50%; position: absolute; }
+			#intro .portfolio { top: 0; left: 0; }
+			#intro .projects { top: 0; right: 0; }
+			#intro .home { bottom: 0; right: 0; }
+			#intro .blog { bottom: 0; left: 0; }
+
+/*			#tabs, #bg, #wrapper { display: none; } */
+
+			@-webkit-keyframes fade-out-intro {
+				0%   {opacity: 1; }
+				100%   { opacity: 0; }
+			}
+			@-webkit-keyframes fade-in-main-elements {
+				0%   { opacity: 0; }
+				100%   { opacity: 1; }
+			}
+
+/*			
+			body.past-intro #intro {
+				-webkit-animation-name: fade-out-intro;
+				-webkit-animation-duration: 1s;
+			}
+*/
+/*
+			body.past-intro #tabs,
+			body.past-intro #bg,
+			body.past-intro #wrapper {
+				-webkit-animation-name: fade-in-main-elements;
+				-webkit-animation-duration: 1s;
+				-webkit-animation-delay: 1s;
+				
+				display:block;
+			}
+			*/
+			/*CSS TRANSITIONS FOR DISPLAY?*/
+		</style>
+		<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+	</head>		
+	<body>		
+
+		<header id="tabs">
+			<nav>
+			        <a id="menu-portfolio" href="#portfolio"><span>Works</span></a>
+					<a id="menu-projects" href="#projects"><span>Code</span></a>
+					<a id="menu-home" href="#about"><span>Jesse</span></a>
+			        <a id="menu-blog" href="#blog"><span>Fun</span></a>
+			</nav>
+		</header>
+
+		<section id="intro">
+			<nav>
+				<div class="portfolio">
+			        <a href="#portfolio"><span>Works</span></a>
+			    </div>
+			    <div class="projects">
+					<a href="#projects"><span>Code</span></a>
+				</div>
+				<div class="home">
+					<a href="#about"><span>Jesse</span></a>
+				</div>
+				<div class="blog">
+			        <a href="#blog"><span>Fun</span></a>
+			    </div>
+			</nav>
+		</section>
+		
+		<div id="bg">
+			<div class="portfolio"></div>
+			<div class="blog"></div>
+			<div class="projects"></div>
+			<div class="portfolio lines"></div>
+			<div class="blog lines"></div>
+			<div class="projects lines"></div>
+		</div>
+
+		<section id="wrapper">
+            <div id="main">
+                <div id="title"><h1>EmoTe API</h1></div>
+				<div class="content">
+					<div id="about">
+						<h2>About</h2>
+						<div>
+							<p>
+					    		The <abbr title="Emotive Text">EmoTe</abbr> API is a web service which calculates the various types and levels of emotions in a given passage of text. 
+					    		It exposes the <a href="http://synesketch.krcadinac.com/javadoc/synesketch/emotion/package-summary.html">synesketch.emotion</a> package
+					    		of the <a href="http://www.synesketch.krcadinac.com/wiki/index.php?title=Main_Page">Synesketch</a> Java API.
+					   		</p>
+    	
+					    	<p>
+					    		The API evaluates text and determines its general <a href="http://en.wikipedia.org/wiki/Valence_(psychology)"><em>valence</em></a>
+					    		(ie., is it positive or negative?) and the strength (<em>weight</em>) of the general <em>valence</em>.
+					    		The text will also have a series of emotions associated with it, each with their own <em>weight</em>s.
+					    	</p>
+					    	<p>
+					    		<em>Weight</em>s are on a <strong>0-1</strong> scale. A <em>weight</em> closer to <strong>0</strong> means that the emotion is very weak,
+					    		whereas a value near <strong>1</strong> indicates that the emotion is very strong.
+					    		<em>Weight</em>s are assigned to the general <em>valence</em> of the text, as well as to each individual emotion present in the text.
+					    	</p>
+					    	<p>
+					    		The possible emotions are:
+					    	</p>
+					    	<ul>
+					    		<li>Happiness</li>
+					    		<li>Sadness</li>
+					    		<li>Fear</li>
+					    		<li>Anger</li>
+					    		<li>Disgust</li>
+					    		<li>Surprise</li>
+					    	</ul>
+
+						</div>
+					</div>
+					<div id="how-to">
+						<h2>Usage</h2>
+						<div>
+							<p>
+								To use this API, <strong>please</strong> <a href="https://github.com/jessefulton/emotivetext.com/fork">fork it on github</a>
+								and create a new <abbr title"Google App Engine">GAE</abbr> instance running this code. I would love to create portfolio service
+								to host everybody's requests, but I really don't feel like paying for that, or setting up a donation system to keep this running.
+							</p>
+							<p>
+								If you encounter any bugs, or would like any changes, please submit them <a href="https://github.com/jessefulton/emotivetext.com/issues">at github</a>.
+							</p>
+						</div>
+						<div id="examples">
+							<h3>Examples</h3>
+							<div>
+								<h4>Using <em>POST</em></h4>
+								<div>
+									<p>
+										To use the API from a server-side technology, simply make a post request to the /api URI of your app engine instance (ie., http://emoteapi.appspot.com/api or http://localhost:8888/api)
+										and include a parameter named "text" containing the text you'd like to evaluate. The server will return a JSON-encoded response.
+									</p>
+									<p>
+										<a href="#blog">See the example</a>
+									</p>
+								</div>
+								<h4>JSONP (experimental)</h4>
+								<div>
+									<p>
+										JSONP support is experimental. In order to use JSONP, make a GET request to the /api URI and include 
+										a <code>text</code> query parameter containing the text to be evaluated and a <code>callback</code> parameter
+										with the name of the JavaScript callback function.
+									</p>
+									<p>
+										Because JSONP operates over GET, the length of the <code>text</code> parameter may be limited by browser constraints.
+									</p>
+									<p>
+										<a href="/jsonp.html">See the example</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+	
+		</footer>	
+		
+		
+		<script type="text/javascript">
+			$("#intro a").click(function() {
+				$("#intro").hide(function() {
+					$("#tabs, #bg, #wrapper").fadeIn();
+					//$("body").addClass("past-intro");
+				});
+			});
+			$("#tabs a").click(function() {
+				$("#tabs a").removeClass("active");
+				$(this).addClass("active");
+				var tgt = ($(this).attr("href"));
+				$("body").removeClass().addClass(tgt.replace("#", ""));
+				$('html, body').animate({scrollTop: $(tgt).offset().top - 64}, 1000);
+				return false;
+			});
+		</script>
+	</body>
+</html>

@@ -13,30 +13,29 @@
 		<meta name="keywords" content="artist,designer,internet art,net art,social practice,performance art,tactical media,public art,street art,open source,FLOSS,performance,front end,frontend,web,web development,jesse,fulton,jesse fulton,MFA,Santa Cruz, Los Angeles, San Francisco,ca,california,design,art,technology,geek,nerd,research,mechatronics,UCSC" />
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link href="/css/structure.css" media="screen" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-		
+		<style type="text/css">
+		{{ page.style }}
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>		
 		<script type="text/javascript">
     $(document).ready(function() {
       {{ page.script }}
     });
 		</script>
 	</head>
-	<body>
+	<body class="module-portfolio controller-index action-view portfolio-index-view no-nav">
 
 
         <div id="tabs">
             <ul class="navigation">
 			    <li class="active">
-			        <a id="menu-home" href="#about"><span>About</span></a>
+			        <a id="menu-home" href="/index.html"><span>Projects</span></a>
 			    </li>
 			    <li>
-			        <a id="menu-portfolio" href="#how-to"><span>Usage</span></a>
+			        <a id="menu-portfolio" href="/about.html"><span>About</span></a>
 			    </li>
 			    <li>
-			        <a id="menu-portfolio" href="#demo"><span>Demo</span></a>
-			    </li>
-			    <li>
-			        <a id="menu-playground" href="#source"><span>Source</span></a>
+			        <a id="menu-portfolio" href="/cv.html"><span>CV</span></a>
 			    </li>
 			</ul>
 			<div id="headerlogo"><a href="http://jessefulton.com/"><span>home</span></a></div>

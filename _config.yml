@@ -10,3 +10,5 @@ ga: UA-25231338-1
 title: Title
 subtitle: Subtitle
 author: My Name
+exclude:
+- Scripts

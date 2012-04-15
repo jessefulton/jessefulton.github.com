@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title></title>
+		<style type="text/css">
+            * { background-image:none;}
+            #main {background-color: transparent;}
+            html, body, #wrapper, #grid { width:30000px; height:30000px;}
+            body { background-color: #ee4591; }
+            #grid { background: transparent url("../../js/playground/motion-tracking/diamond.png") repeat 0 0; }
+            #cameraControl { position:fixed; top: 30px; left: 30px; }		
+		</style>
+		<script type="text/javascript" src="../../js/playground/motion-tracking/js/init.js"></script>
+	</head>
+	
+	<body>
+        <div id="grid">
+            <div id="cameraControl">
+                <object id="iembedflash"
+                	classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+                	codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+                	width="300" height="185">
+                	<param name="movie" value="/js/playground/motion-tracking/motion-tracking.swf" />
+                	<param name="quality" value="high" />
+                	<param name="allowScriptAccess" value="always" />
+                	<embed allowScriptAccess="always" id="embedflash"
+                		src="../../js/playground/motion-tracking/motion-tracking.swf" quality="high"
+                		width="300" height="185" type="application/x-shockwave-flash"
+                		pluginspage="http://www.macromedia.com/go/getflashplayer"
+                		mayscript="true" />
+                </object>
+            </div>
+        </div>
+	</body>
+</html>
+
+
+

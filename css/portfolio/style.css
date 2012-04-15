@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+
+/*** YUI RESET ***/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/*** YUI RESET ***/
+
+body {
+	background-color: #EEE;
+	color: #AAA;
+	text-align:center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 3ex;
+	
+}
+
+#wrapper { 
+	width: 900px;
+	border: 1px solid #AAA;
+	border-top: none;
+	text-align:left;
+	margin:0 auto;
+	background-color: #FAFAFA;
+	color: #282828;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #033860;
+	font-family: "Myriad Pro", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	font-weight: bold;
+	text-indent: -1em;
+	font-variant: small-caps;
+	padding-left: 1em;
+	line-height: 2ex;
+}
+
+
+
+#header h1 {
+	color: #282828;
+	padding-top: 1ex;
+	font-size: 6em;
+	padding-left: 2em;
+
+}
+
+#page-title {
+	padding-top: 1ex;
+	font-size: 8em;
+	color: #DDD;
+		text-align:right;
+		padding-right: 1em;
+
+}
+
+#page-title:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.item p {
+	font-family: Garamond, "Times New Roman", Times, Serif;
+	font-size: .8em;
+	line-height: 2ex;
+}
+
+/* */

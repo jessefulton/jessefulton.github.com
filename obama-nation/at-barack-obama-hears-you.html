@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>@BarackObama Hears You</title>
+		<style type="text/css">
+			* { margin:0; padding: 0; }
+			body { background-color: #fde5a9; color: #00324d; }
+            /* body { background: #e01825 url('/images/playground/belief-in-change-change-in-beliefs/bg-repeat-y.png') scroll repeat-y top left; color: #00324d; } */
+            #wrapper { position:relative; width: 1100px; height: 880px; }
+            .neutral {  background: transparent url('../images/playground/belief-in-change-change-in-beliefs/obama-emotions.png') scroll no-repeat bottom center; }
+            .positive {  background: transparent url('../images/playground/belief-in-change-change-in-beliefs/obama-emotions.png') scroll no-repeat bottom right; }
+            .negative {  background: transparent url('../images/playground/belief-in-change-change-in-beliefs/obama-emotions.png') scroll no-repeat bottom left; }
+            #wrapper { margin: 50px auto; }
+            #tweet { position:absolute; top: 55px; right: 55px; width: 540px; font-size: 54px; font-family: Gotham, Hevetica, Arial, Serif; font-weight: bold; text-transform: uppercase; } 
+		</style>
+		<script type="text/javascript" src="../js/jquery/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript">
+		var quotes = [{"generalWeight":0.1875,"valence":-1,"previous":null,"emotions":[{"weight":0.050625,"type":1},{"weight":0.10125,"type":5}],"text":"there are too many commercials before the movie starts in the theaters. We need CHANGE."},{"generalWeight":0.1875,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":1},{"weight":0.0675,"type":5}],"text":"delivered on his promise for change people. We are out of Iraq, Bin Laden is dead and the economy is slowly recovering."},{"generalWeight":0.1875,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":1},{"weight":0.031578947368421,"type":3},{"weight":0.0675,"type":5}],"text":"I just stepped in a big pile of Barack Obama .....it's a mess! #election2012 #ImIN #obama #change"},{"generalWeight":0.75,"valence":-1,"previous":null,"emotions":[{"weight":0.051923076923077,"type":0},{"weight":0.0675,"type":5}],"text":"I know that you are delighted to be running against Romney,because Ron Paul offers the real hope and change !"},{"generalWeight":0.10125,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":0},{"weight":0.0675,"type":5}],"text":"said in Cartagena that he is willing to debate about \"War on Drugs\" but he is no going to change his position."},{"generalWeight":0.75,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":0},{"weight":0.0675,"type":5}],"text":"Bo is madd country, I hope he's young enough to change the name to Smokey or 2012 Winner"},{"generalWeight":0.75,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":1},{"weight":0.0375,"type":2},{"weight":0.0675,"type":5}],"text":"judging by your replies, I think \"most\" Americans disagree with you...and that gives me \"hope\" for \" change\"."},{"generalWeight":0.5,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":1},{"weight":0.0675,"type":5}],"text":"Obama at Summit:  Brazil has changed, Colombia has changed, and we welcome the change! Barack Obama, #CumbreAm\u00e9ricas"},{"generalWeight":0.1875,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":0},{"weight":0.0675,"type":5}],"text":"we don't need the Buffett rule we need real change. #fairtax so everyone pays an equal share."},{"generalWeight":0.34090909090909,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":1},{"weight":0.085714285714286,"type":5}],"text":" I wish there were a way to  pay targeted extra tax; eg, give an extra chunk of change specifically to SNAP or the VA!"},{"generalWeight":0.10125,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":1},{"weight":0.0675,"type":5}],"text":"it's time for change!"},{"generalWeight":0.10125,"valence":-1,"previous":null,"emotions":[{"weight":0.03375,"type":1},{"weight":0.0675,"type":5}],"text":"change!!"}];
+
+		var NEUTRAL = -1;
+		var HAPPINESS = 0;
+		var SADNESS = 1;
+		var FEAR = 2;
+		var ANGER = 3;
+		var DISGUST = 4;
+		var SURPRISE = 5;
+		
+		var changeToQuote = function(i) {
+	    	$("#tweet").fadeOut(2500, function() {
+
+	    		$("#wrapper").removeClass("positive").removeClass("negative").removeClass("neutral");
+	    		$("#wrapper").addClass('neutral');
+	    		
+		    	var activeQuote = quotes[i];
+	        	$("#tweet").text(activeQuote.text);
+	        	$("#tweet").fadeIn(2500, function() {
+		        	$("#wrapper").removeClass("positive").removeClass("negative").removeClass("neutral");
+
+		        	var customValence = 0;
+
+		        	
+		        	for(var j=0; j<activeQuote.emotions.length; j++) {
+			        	var emotion = activeQuote.emotions[j];
+						if (emotion.type == HAPPINESS 
+								|| emotion.type == NEUTRAL
+								|| emotion.type == SURPRISE) {
+							customValence += emotion.weight;
+						}
+						else if (emotion.type == SADNESS
+								|| emotion.type == FEAR
+								|| emotion.type == ANGER
+								|| emotion.type == DISGUST) {
+							customValence -= emotion.weight;
+						}
+		        	}
+		        	
+		        	if (customValence > 0) { //(activeQuote.valence > 0) {
+		        		$("#wrapper").addClass("positive");
+		        	}
+		        	else if (customValence < 0) { //(activeQuote.valence < 0) {
+						$("#wrapper").addClass("negative");
+		        	}
+		        	else {
+			        	$("#wrapper").addClass('neutral');
+		        	}
+
+		        });
+	        });	
+		}
+		
+
+		var _COUNT = 0;
+
+		var changeQuote = function() {
+			changeToQuote(_COUNT);
+			_COUNT++;
+	    	if (_COUNT >= quotes.length) { _COUNT = 0; }
+		}
+
+		
+		window.setInterval(changeQuote, 10000);
+
+		$(document).ready(changeQuote);
+
+				
+		
+		</script>
+	</head>
+	
+	<body>
+		<div id="wrapper" class="neutral">
+			<div id="tweet"></div>
+		</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+try {
+	var pageTracker = _gat._getTracker("UA-1024545-5");
+	pageTracker._setDomainName(".jessefulton.com");
+	pageTracker._trackPageview();
+} catch(err) {}
+//]]>
+</script>
+	</body>
+</html>
+
+
+

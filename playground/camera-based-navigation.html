@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<!-- Why hello there,in case you were wondering, you are looking at the production version of this site. Now carry on. -->
+	<head>
+		<title>jesse fulton [dot com] - camera-based navigation</title>		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en-US" />
+<meta name="description" content="Jesse Fulton - Artist, Programmer, Hacker" />
+<meta name="keywords" content="artist,designer,internet art,net art,social practice,performance art,tactical media,public art,street art,open source,FLOSS,performance,front end,frontend,web,web development,jesse,fulton,jesse fulton,MFA,Santa Cruz, Los Angeles, San Francisco,ca,california,design,art,technology,geek,nerd,research,mechatronics,UCSC" />		<link href="../css/v3/style.css" media="print,screen" rel="stylesheet" type="text/css" />				<script type="text/javascript" src="../js/jquery/jquery-1.3.2.min.js"></script>		<link rel="shortcut icon" href="../aniportrait-16x16.gif" />
+	</head>
+	<body class="module-playground controller-camera-based-navigation action-index playground-camera-based-navigation-index no-nav">
+	
+		<div id="wrapper">
+            
+<!--
+			<div id="header">
+                <h1>Jesse Fulton</h1>
+                			</div>
+-->            
+            <div id="tabs">
+                <ul class="navigation">
+    <li>
+        <a id="menu-home" href="../index.html"><span>Home</span></a>
+    </li>
+    <li>
+        <a id="menu-portfolio" href="../portfolio.html"><span>Work</span></a>
+    </li>
+    <li class="active">
+        <a id="menu-playground" href="../playground.html"><span>Experiments</span></a>
+    </li>
+    <li>
+        <a id="menu-tumblog" href="http://blog.jessefulton.com"><span>Blog</span></a>
+    </li>
+    <li>
+        <a id="menu-contact" href="../contact.html"><span>Contact</span></a>
+    </li>
+</ul>            </div>
+            
+            <div id="main">
+                				
+
+<div class="breadcrumbs">
+<a id="breadcrumbs-playground" href="../playground.html">Experiments</a> &gt; Camera-based Navigation</div>
+
+<div class="content">
+    
+    <h1>Camera-based Navigation</h1>
+    <div class="description">
+    	<p>
+    		I've been trying to explore the use of motion & gesture tracking to control the web browser.
+    		Thus far, I have only created a proof-of-concept which can be used on any webpage by using the bookmarklet link below.
+    	</p>
+    	<p>
+    		The next steps would be to add color tracking to allow for interactions such as clicking links, and eventually
+    		replacing all of that with gesture recognition, allowing the user to navigate the webpage with their hands and body, without 
+    		requiring the use of any special pointers or devices.
+    	</p>
+    
+    	<h2>Demos</h2>
+    	<p>
+    		If you have a webcam on your computer, feel free to try out some of the live demos. Since
+    		they are all just proof-of-concepts, I've only tested them on my Macbook Pro in Firefox & Safari.
+    		If your setup doesn't work, just enjoy the <a href="camera-based-navigation.html#motion-tracking-video">video demonstration</a> below.
+    	</p>
+    	<p>
+			And if you <em>really</em> like the demo (assuming it works), you can drag this
+	    	<a href="javascript:var%20script%20=%20document.createElement('script');script.src%20=%20'http://jessefulton.com/js/playground/motion-tracking/js/bookmarklet.js?v=1';script.type%20=%20'text/javascript';document.getElementsByTagName('head')[0].appendChild(script);void%200;">bookmarklet</a> into your browser to 
+	    	test it out on any web page.
+    	</p>
+    	
+    	<div>
+    		<h3><a href="camera-based-navigation/proof-of-concept.html">Version 1</a></h3>
+    		<p>
+    			Extended <a href="http://blog.soulwire.co.uk/flash/actionscript-3/webcam-motion-detection-tracking/" title="">Justin Windle's AS3 Motion Tracking class</a>
+    			to communicate with JavaScript in order to control the web browser.
+    		</p>
+    		<p>
+    			<a href="camera-based-navigation/proof-of-concept.html">View in action</a>
+    		</p>
+    	</div>
+    
+    </div>
+    <div id="motion-tracking-video" class="video">
+    	<object width="640" height="480"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6876564&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=ff3b8b&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6876564&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=ff3b8b&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="480"></embed></object>
+    </div>
+    
+</div>            </div>
+
+                        	<div class="clearfix"></div>
+				<div id="logo"><a href="../index.html"><span>home</span></a></div>
+            	<div class="clearfix"></div>
+		</div>
+		
+		<script type="text/javascript">
+    //<![CDATA[
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+try {
+	var pageTracker = _gat._getTracker("UA-1024545-5");
+	pageTracker._setDomainName(".jessefulton.com");
+	pageTracker._trackPageview();
+} catch(err) {}
+    //]]>
+</script>	</body>
+</html>

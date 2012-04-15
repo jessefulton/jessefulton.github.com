@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<!-- Why hello there,in case you were wondering, you are looking at the production version of this site. Now carry on. -->
+	<head>
+		<title>jesse fulton [dot com] - Emotive Text (EmoTe) API</title>		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en-US" />
+<meta name="description" content="Jesse Fulton - Artist, Programmer, Hacker" />
+<meta name="keywords" content="artist,designer,internet art,net art,social practice,performance art,tactical media,public art,street art,open source,FLOSS,performance,front end,frontend,web,web development,jesse,fulton,jesse fulton,MFA,Santa Cruz, Los Angeles, San Francisco,ca,california,design,art,technology,geek,nerd,research,mechatronics,UCSC" />		<link href="css/v3/style.css" media="print,screen" rel="stylesheet" type="text/css" />		<style type="text/css" media="screen">
+<!--
+.preloaded-phrases li { cursor: pointer; }.preloaded-phrases li:hover { text-decoration:underline; }dl.codes {float: left; width: 320px; margin: 16px 32px 32px; }dl.codes dt {float: left; width: 40px; padding-right: 40px; clear: left; font-weight: bold; text-align:right; }dl.codes dd {float: left; width:240px; }hr {clear: left;} ul.preloaded-phrases { margin: 16px; }ul.preloaded-phrases li { color: #29E8FF; margin-left: 16px; list-style-type: none; list-style-position:inside; }span.description { font-size: 12px; font-style:italic; color: #FFF; }
+-->
+</style>		<script type="text/javascript" src="js/jquery/jquery-1.3.2.min.js"></script>		<link rel="shortcut icon" href="aniportrait-16x16.gif" />
+	</head>
+	<body class="module-playground controller-emote-api action-index playground-emote-api-index no-nav">
+	
+		<div id="wrapper">
+            
+<!--
+			<div id="header">
+                <h1>Jesse Fulton</h1>
+                			</div>
+-->            
+            <div id="tabs">
+                <ul class="navigation">
+    <li>
+        <a id="menu-home" href="index.html"><span>Home</span></a>
+    </li>
+    <li>
+        <a id="menu-portfolio" href="portfolio.html"><span>Work</span></a>
+    </li>
+    <li class="active">
+        <a id="menu-playground" href="playground.html"><span>Experiments</span></a>
+    </li>
+    <li>
+        <a id="menu-tumblog" href="http://blog.jessefulton.com"><span>Blog</span></a>
+    </li>
+    <li>
+        <a id="menu-contact" href="contact.html"><span>Contact</span></a>
+    </li>
+</ul>            </div>
+            
+            <div id="main">
+                				
+<div class="breadcrumbs">
+<a id="breadcrumbs-playground" href="playground.html">Experiments</a> &gt; EmoTe API</div>
+
+<div class="content">
+
+	<h1>Emotive Text (EmoTe) API</h1>
+
+    <div class="description">
+    	<p>
+    		The <abbr title="Emotive Text">EmoTe</abbr> API is a web service which calculates the various types and levels of emotions in a given passage of text. 
+    		It is a partial PHP port of the <a href="http://www.synesketch.krcadinac.com/wiki/index.php?title=Main_Page">Synesketch</a> Java API,
+    		focusing on the <a href="http://synesketch.krcadinac.com/javadoc/synesketch/emotion/package-summary.html">synesketch.emotion</a> package.
+   			It is currently a little rough around the edges and could use some refactoring, but it works.
+   		</p>
+    </div>
+	
+	
+	
+	<div>
+    	<h2>Usage</h2>
+    	<p>
+    		<del>To use the API, simply <code>POST</code> to this web page, with a parameter named <code>text</code> containing
+    		the text you'd like to analyze...
+     		If you're planning on making heavy use of the API, please set it up on your own server. 
+    		<a href="http://jessefulton.com/index/contact">Contact me</a> for the source code or with any other questions.
+    		</del>
+    	</p>
+    	<p>
+    		Well, sure enough, somebody (more specificaly, someone working for <a href="http://www.joyent.com/" rel="nofollow">Joyent</a> on a site at <a rel="nofollow" href="http://yhtidebo.joyent.us">yhtidebo.joyent.us</a>)
+    		decided to make heavy use of my hosted version of this API without contacting me, so
+    		in order to use the EmoTe API from now on, you must download it from <a href="http://github.com/jessefulton/EmoTe" title="EmoTe API on GitHub">GitHub</a>
+    		and install it on your own server. If you try to use my hosted version, you will always get the same response back,
+    		warning you to stop hogging resources as Joyent did.
+    	<p>
+    		After installing, analyzing text will return a JSON-encoded response of the form:
+    	</p>
+    	<div><pre class="code">
+{
+    "generalWeight": weight          //number between zero and one
+    , "valence": valence             //-1, 0, or 1
+    , "previous": null               //always null (artifact from synsesketch)
+    , "emotions": [                  //an array of emotion objects
+        {
+            "weight": emotionWeight  //number between zero and one
+            ,"type": emotionType     //the emotion type (see list below)
+        }
+        , {
+            "weight": emotionWeight  //number between zero and one
+            ,"type": emotionType     //the emotion type (see below)
+        }
+    ]
+    ,"text": originalTextProcessed
+}
+        </pre></div>
+    </div>
+	
+	
+	<div>
+    	<h2>How it works</h2>
+    	
+    	<p>
+    		The phrase, sentence, or passage will have a general <a href="http://en.wikipedia.org/wiki/Valence_%28psychology%29">valence</a>
+    		(ie., is it positive or negative?) and a general weight as to how strong the overall
+    		emotion is. The phrase will also have a series of emotions associated with it, each with their own weights.
+    	</p>
+    	<p>
+    		Weights are on a 0-1 scale. A weight closer to zero means that the emotion is very weak, whereas a weight of
+    		one indicates that the emotion is very strong in that text. Weights are assigned to the general valence of
+    		the text, as well as to each individual emotion present in the text.
+    	</p>
+    	<p>
+    		The codes for the emotions are as follows:
+    	</p>
+    	<dl class="codes">
+    		<dt>-1</dt>
+    		<dd>Neutral</dd>
+    		<dt>0</dt>
+    		<dd>Happiness</dd>
+    		<dt>1</dt>
+    		<dd>Sadness</dd>
+    		<dt>2</dt>
+    		<dd>Fear</dd>
+    		<dt>3</dt>
+    		<dd>Anger</dd>
+    		<dt>4</dt>
+    		<dd>Disgust</dd>
+    		<dt>5</dt>
+    		<dd>Surprise</dd>
+    	</dl>
+	</div>
+
+	<hr />
+
+	<div>
+    	<h2>Test it out</h2>
+    	<div>
+    		Enter your text in the form below, or try some of these sample phrases:
+    		<ul class="preloaded-phrases">
+    			<li id="hurt-lyrics">The lyrics to Nine Inch Nails' song "Hurt" <span class="description">(happiness, fear, and anger with a strong negative valence)</span></li>
+    			<li id="i-have-a-dream">Excerpt from Martin Luther King Jr.'s "I Have a Dream" speech <span class="description">(happiness, anger, and surprise)</span></li>
+    			<li id="hamlet">Excerpt from Hamlet <span class="description">(slight happiness, slight sadness, weak general negative valence)</span></li>
+    			<li id="calculus">A brief explanation of Derivatives <span class="description">(very weak fear, very weak general negative valence)</span></li>
+    			<li id="twinkle">Twinkle Twinkle Little Star <span class="description">(surprise, strong positive general valence)</span></li>
+    		</ul>
+    	</div>
+    	<div>
+    	
+    	
+    	<form enctype="application/x-www-form-urlencoded" action="emote-api.html" method="post"><dl class="zend_form">
+<dt id="text-label"><label for="the-text-area" class="required">Message</label></dt>
+<dd id="text-element">
+<textarea name="text" id="the-text-area" rows="24" cols="80"></textarea></dd>
+<dt id="csrf-label">&nbsp;</dt>
+<dd id="csrf-element">
+<input type="hidden" name="csrf" value="142a34dfed6220de64777ca00c35272a" id="csrf" /></dd>
+<dt id="send-label">&nbsp;</dt><dd id="send-element">
+<input type="submit" name="send" id="send" value="EmoTe!" /></dd></dl></form>    	</div>
+	</div>
+    
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$("#hurt-lyrics").click(function() { $("#the-text-area").val("I hurt myself today, to see if I still feel. I focus on the pain, the only thing that's real. The needle tears a hole - the old familiar sting. I try to kill it all away, but I remember everything."); });
+$("#i-have-a-dream").click(function() { $("#the-text-area").val("This is our hope. This is the faith that I go back to the South with. With this faith we will be able to hew out of the mountain of despair a stone of hope. With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood. With this faith we will be able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day."); });
+$("#hamlet").click(function() { $("#the-text-area").val("Angels and ministers of grace, defend us! Be thou a spirit or goblin damned, Bring with thee airs from heaven or blasts from hell"); });
+$("#calculus").click(function() { $("#the-text-area").val("The derivative f'(x) of a curve at a point is the slope of the line tangent to that curve at that point. This slope is determined by considering the limiting value of the slopes of secant lines. Here the function involved (drawn in red) is f(x) = x3 - x. The tangent line (in green) which passes through the point (-3/2, -15/8) has a slope of 23/4. Note that the vertical and horizontal scales in this image are different."); });
+
+$("#twinkle").click(function() { $("#the-text-area").val("Twinkle, twinkle, little star,\r\nHow I wonder what you are.\r\nUp above the world so high,\r\nLike a diamond in the sky.\r\nTwinkle, twinkle, little star,\r\nHow I wonder what you are!"); });
+
+
+</script>
+
+            </div>
+
+                        	<div class="clearfix"></div>
+				<div id="logo"><a href="index.html"><span>home</span></a></div>
+            	<div class="clearfix"></div>
+		</div>
+		
+		<script type="text/javascript">
+    //<![CDATA[
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+try {
+	var pageTracker = _gat._getTracker("UA-1024545-5");
+	pageTracker._setDomainName(".jessefulton.com");
+	pageTracker._trackPageview();
+} catch(err) {}
+    //]]>
+</script>	</body>
+</html>

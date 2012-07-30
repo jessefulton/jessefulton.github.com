@@ -1,0 +1,140 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>CSS3 Matrix Animation</title>
+		<!-- http://girliemac.com/sandbox/matrix.html -->
+		<style type="text/css" media="screen">
+		html, body{
+			font-family: Helvetica, Verdana, sans-serif;
+			width:100%;
+			height:100%;
+			margin:0;
+			padding:0;
+		}
+
+		body { 
+					/* animation */
+			-webkit-animation-name: bgchange;			
+			-webkit-animation-iteration-count: infinite; /* use 0 to infinite */
+			-webkit-animation-direction: normal; /* default is normal. use 'alternate' to reverse direction */
+			-webkit-animation-timing-function: ease;
+			-webkit-animation-duration: 30s;
+		}
+
+		@-webkit-keyframes bgchange{
+
+			0% {background-color: hsl(0, 100%, 50%);}
+			20% {background-color: hsl(70, 100%, 50%);}
+			40% {background-color: hsl(140, 100%, 50%);}
+			60% {background-color: hsl(210, 100%, 50%);}
+			80% {background-color: hsl(280, 100%, 50%);}
+			100% {background-color: hsl(350, 100%, 50%);}
+		}
+		
+
+
+
+
+		
+		#matrix{
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background-image: url('http://localhost.jessefulton.com/css/v3/images/static-outlines2.png');
+			-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+			background-repeat: repeat;
+			background-attachment: scroll;
+			backround-position: 50% 0; 
+			position: relative;
+		}
+
+		@-webkit-keyframes colorchange{
+		    0%   { background-color: hsl(0, 100%, 50%); }
+			33%   { background-color: hsl(120, 100%, 50%); }
+			66%   { background-color: hsl(240, 100%, 50%); }
+			100%   { background-color: hsl(359, 100%, 50%); }
+		}
+		@-webkit-keyframes fade{
+		    
+		}
+		@-webkit-keyframes fall{
+		   	from {top: 0px;}
+			to 	{top: 100%;}
+		}
+
+
+		#matrix div{
+			width: 10px;
+			height: 10px;
+		
+			/* writing-mode: tb-rl; - ughh. doesn't work */
+			position: absolute;	
+			top: 0;
+			/* arrearance */
+			-webkit-transform-origin: 0%;
+			-webkit-transform: rotate(90deg); 
+			
+			/* animation */
+			-webkit-animation-name: fall, fade, colorchange;			
+			-webkit-animation-iteration-count: infinite; /* use 0 to infinite */
+			-webkit-animation-direction: normal; /* default is normal. use 'alternate' to reverse direction */
+			-webkit-animation-timing-function: ease;
+		}
+		
+		#matrix span{
+
+		}
+		.f1{
+			font-size: 1.2em;
+		}
+		.f2{
+			font-size: .9em;
+		}
+		.c1{
+
+		}
+		.d1{
+			-webkit-animation-duration: 14s;
+		}
+		.d2{
+			-webkit-animation-duration: 16s;
+		}
+		.d3{
+			-webkit-animation-duration: 18s;
+		}
+		.d4{
+			-webkit-animation-duration: 10s;
+		}
+		.de{	
+			-webkit-animation-delay: 3s;
+		}
+		
+		</style>
+		
+	</head>
+	<body>
+		
+		<div id="matrix">	
+			<div class="d1 c1 de" style="left:5px;"></div>
+			<div class="d3 f1" style="left:30px;"></div>
+			<div class="d1 f2 c1" style="left:60px;"></div>
+			<div class="d2 f1" style="left:80px;"></div>
+			<div class="d4 c3 de" style="left:110px;"></div>
+			<div class="d2 c1" style="left:140px;"></div>
+			<div class="d3 f2 c1" style="left:170px;"></div>
+			<div class="d1 c1" style="left:185px;"></div>
+			<div class="d3 de" style="left:200px;"></div>
+			<div class="d4 f1" style="left:250px;"></div>
+			<div class="d2 de" style="left:290px;"></div>
+			<div class="d3 f2" style="left:310px;"></div>
+			<div class="d1 f1" style="left:350px;"></div>
+			<div class="d4 c1" style="left:390px;"></div>
+			<div class="d2 de" style="left:410px;"></div>
+			<div class="d1 c1 de" style="left:430px;"></div>
+		</div>	
+		
+	</body>
+</html>

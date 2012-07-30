@@ -1,0 +1,98 @@
+code {
+  background-color: transparent;
+}
+
+.form-stacked label {
+  margin-bottom: 3px;
+}
+
+.actions {
+  background: none;
+  border: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.btn {
+  @include border-radius(0px);
+
+  &.orange {
+    font: 300 1em/1em $headerFont;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &.xlarge {
+    font: 300 1.5em/1em $headerFont;
+    line-height: normal;
+    padding: 0.75em 2em;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.tabs .menu-dropdown, .tabs .dropdown-menu {
+  border-radius: 0 0 6px 6px;
+  top: 37px;
+}
+
+.menu-dropdown, .dropdown-menu {
+  min-width: 240px;
+}
+
+.tabs a.menu:after,
+.tabs .dropdown-toggle:after {
+  margin-top: 18px;
+}
+
+.open .menu,
+.open .dropdown-toggle,
+.dropdown.open .menu,
+.dropdown.open .dropdown-toggle {
+  background: none repeat scroll 0 0 #EEE;
+  color: #555;
+}
+
+.tabs li.open.menu .menu,
+.tabs .open.dropdown .dropdown-toggle {
+  border-color: #CCCCCC;
+}
+
+.tabs {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.tabs > li > a {
+  @include border-radius(0px);
+  color: #999999;
+  font: 300 1.2em/36px $headerFont;
+  letter-spacing: 0.5px;
+}
+
+.tabs > li > a:hover {
+  background: none;
+  border: 1px solid transparent;
+  color: #555;
+}
+
+.tabs .menu-dropdown,
+.tabs .dropdown-menu {
+  @include border-radius(0px);
+}
+
+.topbar .dropdown-menu, .dropdown-menu {
+  // Links within the dropdown menu
+  a {
+    font: 300 1em/1.8em $headerFont;
+    // Hover state
+    &:hover {
+      background: none;
+      @include box-shadow(none);
+    }
+  }
+}
+
+.pagination {
+  a {
+    border: none;
+  }
+}

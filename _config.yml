@@ -1,0 +1,13 @@
+blog_dir: blog
+domain: http://flatterline.com
+exclude: \*.sass, \*.scss, Gemfile, Gemfile.lock, Procfile, README.md, \*.rb, \*.yml, bin
+lsi: true
+markdown: rdiscount
+paginate: 10
+permalink: /blog/:year/:month/:day/:title
+pygments: true
+ga: UA-1024545-5
+gasite: .jessefulton.com
+title: Title
+subtitle: Subtitle
+author: My Name

@@ -1,17 +1,18 @@
 description:
-  Snapped4U is a site for selling photos of people, pets and fundraisers at a set price or
-  let photographers choose both the subject and price of their photos.
-image:
-  url: /images/snapped4u.jpg
-  title: Snapped4u
-  alt: Snapped4u
+  Foo bar
+#image:
+#  url: /images/yoogot.jpg
+#  title: Yoogot
+#  alt: Yoogot
 layout:    project
 project_description:
-  Flatterline took over development of Snapped4U and immediately began fixing bugs that were
-  affecting the user experience. After the site was stable, we embarked on a mission to add
-  key features requested by the site's users.
+  The Mechatronics Research Group consisted of three students in the Digital Arts + New Media program at the University of California Santa Cruz. We are currently investigating possibilities of various installations concerned with the relationship between air quality and asthma and their socio-political effects.
+
+  We are currently researching and prototyping projects using web-based systems, computer vision, and physical computing. The videos above demonstrate a few of the prototypes and proof-of-concepts I have been working on within the group.
+
+  Code for the drawing machine can be found on github. Images of finished prints can be seen at Flickr.
 published: true
 short:
-  A site for selling photos of people, pets and fundraisers at a set price or let photographers choose both the subject and price of their photos.
-title:     Snapped4u
-website:   http://snapped4u.com/
+  Drawing Machine
+title:     Drawing Machine
+website:   http://www.flickr.com/photos/jessefulton/sets/72157629021647557/

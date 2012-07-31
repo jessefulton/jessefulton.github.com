@@ -438,29 +438,29 @@ _width: 240px;
 .portfolio-index-index .items .children { clear:both; float:left; }
 
 
-body.portfolio-index-view .item-content-wrapper { float: left; clear:left; background-color:#1a1a1a; padding: 0 0 16px 0; }
-body.portfolio-index-view .item-content-wrapper a:link, body.portfolio-index-view .item-content-wrapper a:visited { color: #d1d1d1; background-color: #000; }
+body.portfolio.project .item-content-wrapper { float: left; clear:left; background-color:#1a1a1a; padding: 0 0 16px 0; }
+body.portfolio.project .item-content-wrapper a:link, body.portfolio.project .item-content-wrapper a:visited { color: #d1d1d1; background-color: #000; }
 
 
 
-body.portfolio-index-view .item-content-wrapper .description { margin: 0; }
-body.portfolio-index-view .item-content-wrapper .description a:hover { text-decoration:none; color: #ff3b8b; background-color: #000; }
-body.portfolio-index-view .item-content-wrapper .role a:hover { text-decoration:none; color: #ffffa9; background-color: #000; }
-body.portfolio-index-view .item-content-wrapper .importance a:hover { text-decoration:none; color: #29e8ff; background-color: #000; }
+body.portfolio.project .item-content-wrapper .description { margin: 0; }
+body.portfolio.project .item-content-wrapper .description a:hover { text-decoration:none; color: #ff3b8b; background-color: #000; }
+body.portfolio.project .item-content-wrapper .role a:hover { text-decoration:none; color: #ffffa9; background-color: #000; }
+body.portfolio.project .item-content-wrapper .importance a:hover { text-decoration:none; color: #29e8ff; background-color: #000; }
 
-body.portfolio-index-view #main h2 { background-color:transparent; color:#d1d1d1; font-size:48px; margin: 8px 0 32px; padding: 0; }
-body.portfolio-index-view #main h2 span.date { font-style:italic; color:#CCC; font-size:24px; line-height: 48px; }
+body.portfolio.project #main h2 { background-color:transparent; color:#d1d1d1; font-size:48px; margin: 8px 0 32px; padding: 0; }
+body.portfolio.project #main h2 span.date { font-style:italic; color:#CCC; font-size:24px; line-height: 48px; }
 
-body.portfolio-index-view #main .item-content-wrapper h3 {margin: 8px 0 16px; /* padding-bottom: 8px; border-bottom: 2px solid #000; */ font-family: Futura, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body.portfolio.project #main .item-content-wrapper h3 {margin: 8px 0 16px; /* padding-bottom: 8px; border-bottom: 2px solid #000; */ font-family: Futura, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-body.portfolio-index-view #main .item-content-wrapper .description { color: #FFB1DB; padding-right: 4px; }
-body.portfolio-index-view #main .item-content-wrapper .description h3 { color: #ff3b8b; }
+body.portfolio.project #main .item-content-wrapper .description { color: #FFB1DB; padding-right: 4px; }
+body.portfolio.project #main .item-content-wrapper .description h3 { color: #ff3b8b; }
 
-body.portfolio-index-view #main .item-content-wrapper .role { color: #ffffe4; padding: 0 4px; }
-body.portfolio-index-view #main .item-content-wrapper .role h3 { color: #ffffa9; }
+body.portfolio.project #main .item-content-wrapper .role { color: #ffffe4; padding: 0 4px; }
+body.portfolio.project #main .item-content-wrapper .role h3 { color: #ffffa9; }
 
-body.portfolio-index-view #main .item-content-wrapper .importance { color: #B9E8FF; padding-left: 4px; }
-body.portfolio-index-view #main .item-content-wrapper .importance h3 { color: #29e8ff; }
+body.portfolio.project #main .item-content-wrapper .importance { color: #B9E8FF; padding-left: 4px; }
+body.portfolio.project #main .item-content-wrapper .importance h3 { color: #29e8ff; }
 
 .item .children ul
 , .item .children ul li {
@@ -485,10 +485,10 @@ width:224px;
 	 }
 
 
-body.portfolio-index-view #main .item-content-wrapper p {padding: 0 8px 8px; }
-body.portfolio-index-view .item-content { float: left; width: 264px; }
-body.portfolio-index-view .no-description.no-role.no-importance .item-content { display: none; }
-body.portfolio-index-view .no-role.no-importance .item-content { float: left; width: 808px; }
+body.portfolio.project #main .item-content-wrapper p {padding: 0 8px 8px; }
+body.portfolio.project .item-content { float: left; width: 264px; }
+body.portfolio.project .no-description.no-role.no-importance .item-content { display: none; }
+body.portfolio.project .no-role.no-importance .item-content { float: left; width: 808px; }
 
 #media-space { width: 536px; height: 400px; overflow:hidden; margin: 8px 0 24px; float:left; text-align: center; position:relative; }
 #main .tiny-thumbs h3 { margin: 0; color:#fcfffd; background-color: transparent; }

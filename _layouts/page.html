@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
-<div id="page">
-  {{ content }}
+
+{% if page.title %}
+<header id="title">
+	<h1>{{ page.title }}</h1>
+</header>
+{% endif %}
+
+<div class="content" class="row">
+{{ content }}
 </div>

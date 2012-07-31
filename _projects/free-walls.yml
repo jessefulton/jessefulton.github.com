@@ -1,26 +1,23 @@
 description:
-  Pick.im is a freelance marketplace. It provides an easy, searchable, geo-located
-  way for clients to find and contact freelancers in their area.
-endorsements:
--
-  body:
-    Flatterline is the best development studio I have ever used, hands down.
-    The code is clean, scales well, is delivered on time and with style.
-
-
-    Highly recommend them!
-  from: Andrew Hyde
-  role: Founder
-image:
-  url: /images/pick-im.jpg
-  title: Pick.im
-  alt: Pick.im
+  Foo bar
+date: 2011 &ndash;
+thumbnail:
+  url: /images/portfolio/free-walls/oakes-2_s.jpg
+  title: The Free Walls Project
+  alt: Free Wals
+  width: 224px
+  height: 160px
 layout:    project
 project_description:
-  Flatterline developed the Pick.im application in Ruby on Rails on a shoestring budget.
-  We implemented the core features, a robust geo-located search and enhanced administration
-  features and launched the site to beta testers in a short timeframe.
+  The Free Walls Project is a collaborative effort with Daniel Christopher and Tony Cutrono, currently in an early prototyping stage.
+
+  A mobile "wall" is brought to various public spaces where people are invited to draw, paint, and collage. The wall is then mounted to a bicycle trailer which is ridden throughout the local community, displaying the final image. The images are also digitally scanned and will be documented and mapped on a website which allows exploration of the works both geographically and over time.
+
+  The project explores ideas of what constitutes "public art," and who can create it.
+
+  The team is currently in the process of securing a permanent venue in downtown Santa Cruz.
 published: true
-short:     A search engine for freelance copywriters, designers, developers, managers, marketers and photographers.
-title:     Pick.im
-website:   http://pick.im/
+short:
+  The Free Walls Project
+title:     The Free Walls Project
+website:   http://www.flickr.com/photos/jessefulton/sets/72157629021647557/

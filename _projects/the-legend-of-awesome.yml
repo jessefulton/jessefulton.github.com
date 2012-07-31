@@ -1,0 +1,16 @@
+description:
+  blah
+video:
+  id: 38009492
+#image:
+#  url: /images/groupon.jpg
+#  title: Groupon
+#  alt: Groupon
+layout:    project
+project_description:
+  The Legend of Aesome
+published: true
+short:
+  The Legend of Awesome
+title:     The Legend of Awesome
+website:   http://jessefulton.com/the-legend-of-awesome/tlos.html

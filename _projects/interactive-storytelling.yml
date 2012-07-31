@@ -1,16 +1,18 @@
 description:
-  Yoogot is an online marketplace to help people sell, buy, trade, or donate items to those in need.
-image:
-  url: /images/yoogot.jpg
-  title: Yoogot
-  alt: Yoogot
+  Foo bar
+#image:
+#  url: /images/yoogot.jpg
+#  title: Yoogot
+#  alt: Yoogot
 layout:    project
 project_description:
-  Flatterline was responsible for gathering the requirements and developing the beta site for
-  Yoogot. We worked closely with the company founders and went from concept to launch in about
-  2 months.
+  The Mechatronics Research Group consisted of three students in the Digital Arts + New Media program at the University of California Santa Cruz. We are currently investigating possibilities of various installations concerned with the relationship between air quality and asthma and their socio-political effects.
+
+  We are currently researching and prototyping projects using web-based systems, computer vision, and physical computing. The videos above demonstrate a few of the prototypes and proof-of-concepts I have been working on within the group.
+
+  Code for the drawing machine can be found on github. Images of finished prints can be seen at Flickr.
 published: true
 short:
-  An online marketplace to help people sell, buy, trade, or donate items to those in need.
-title:     Yoogot
-website:   http://yoogot.com/
+  E
+title:     Interactive Storytelling
+website:   http://www.flickr.com/photos/jessefulton/sets/72157629021647557/

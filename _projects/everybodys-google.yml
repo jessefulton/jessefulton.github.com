@@ -1,0 +1,14 @@
+description:
+  Fill Me in
+#image:
+#  url: /images/groupon.jpg
+#  title: Groupon
+#  alt: Groupon
+layout:    project
+project_description:
+  FPO Project description
+published: true
+short:
+  Everybody's Google
+title:     Everybody's Google
+website:   http://everybodysgoogle.com/

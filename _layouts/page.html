@@ -2,11 +2,17 @@
 layout: default
 ---
 
+<!--
 {% if page.title %}
 <header id="title">
 	<h1>{{ page.title }}</h1>
 </header>
 {% endif %}
+-->
+
+<div class="breadcrumbs">
+	<a id="breadcrumbs-present-and-future" href="/portfolio">portfolio</a> &gt; {{ page.title }}
+</div>
 
 <div class="content" class="row">
 {{ content }}

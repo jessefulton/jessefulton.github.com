@@ -2,10 +2,39 @@
 layout: page
 bodyclass: portfolio project
 ---
-	{% if page.date %}
-		<div class="date">{{ page.date }}</div>
-	{% endif %}
+
+
+<header id="title">
+	<h2>{{ page.title }}{% if page.date %} <span class="date">({{ page.date }})</span>{% endif %}</h2>
+</header>
+
+
 	
+	
+	{% if page.visuals %}
+	
+    	<div class="visuals">
+            <div id="media-space">
+            <!-- TODO: if swf, don't do this -->
+				<div id="click-to-hover">click to expand</div><a id="main-media-link" href="#"><img src="{{ page.visuals[0].src }}" width="{{ page.visuals[0].width }}" height="{{ page.visuals[0].height }}" /></a>
+            </div>
+<!-- TODO: if more than one -->
+{% if page.visuals.size > 1 %}
+    		<div class="tiny-thumbs">
+    			<h3>Media</h3>
+        		<ul>
+				    {% for media in page.visuals %}
+            		<li><a href="javascript:void(0);"><img src="{{ media.tiny  }}" width="38px" height="38px"/></a></li>
+            		{% endfor %}
+        		</ul>
+    		</div>
+{% endif %}
+<!-- TODO: end if more than one -->
+
+    	</div>
+
+	{% endif %}
+
 	{% if page.video %}
 	<iframe src="http://player.vimeo.com/video/{{ page.video.id }}" width="500" height="413" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	{% endif %}
@@ -27,5 +56,10 @@ bodyclass: portfolio project
 	
 	
 	{% if page.website %}
-		<div class="website"><a href="{{ page.website }}">{{ page.website }}</a></div>
+			<div class="meta">
+				<dl>
+		    		<dt>URL</dt>
+					<dd><a href="{{ page.website }}" title="{{ page.title }}">{{ page.website }}</a></dd>
+				</dl>
+			</div>
 	{% endif %}

@@ -7,6 +7,14 @@ thumbnail:
   alt: Free Wals
   width: 224px
   height: 160px
+visuals:
+  - {type: image, width: 536px, height: 356px, src: /images/portfolio/free-walls/oakes-2_m.jpg, tiny: /images/portfolio/free-walls/oakes-2_t.jpg }
+  - {type: image, width: 536px, height: 356px, src: /images/portfolio/free-walls/oakes-1_m.jpg, tiny: /images/portfolio/free-walls/oakes-1_t.jpg }
+  - {type: image, width: 536px, height: 356px, src: /images/portfolio/free-walls/crit-1_m.jpg, tiny: /images/portfolio/free-walls/crit-1_t.jpg }
+  - {type: image, width: 536px, height: 356px, src: /images/portfolio/free-walls/crit-2_m.jpg, tiny: /images/portfolio/free-walls/crit-2_t.jpg }
+  - {type: image, width: 239px, height: 360px, src: /images/portfolio/free-walls/os-1_m.jpg, tiny: /images/portfolio/free-walls/os-1_t.jpg }
+  - {type: image, width: 536px, height: 356px, src: /images/portfolio/free-walls/os-2_m.jpg, tiny: /images/portfolio/free-walls/os-2_t.jpg }
+  - {type: image, width: 536px, height: 356px, src: /images/portfolio/free-walls/os-3_m.jpg, tiny: /images/portfolio/free-walls/os-3_t.jpg }
 layout:    project
 project_description:
   The Free Walls Project is a collaborative effort with Daniel Christopher and Tony Cutrono, currently in an early prototyping stage.

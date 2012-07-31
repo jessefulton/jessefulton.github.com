@@ -1,3 +1,4 @@
+date: 2012
 description:
   Fill Me in
 #image:
@@ -12,39 +13,3 @@ short:
   Everybody's Google
 title:     Everybody's Google
 website:   http://everybodysgoogle.com/
-visuals:
-  - type: image
-    width: 536px
-    height: 356px
-    src: /images/portfolio/free-walls/oakes-2_m.jpg
-    tiny: /images/portfolio/free-walls/oakes-2_t.jpg
-  - type: image
-    width: 536px
-    height: 356px
-    src: /images/portfolio/free-walls/oakes-1_m.jpg
-    tiny: /images/portfolio/free-walls/oakes-1_t.jpg
-  - type: image
-    width: 536px
-    height: 356px
-    src: /images/portfolio/free-walls/crit-1_m.jpg
-    tiny: /images/portfolio/free-walls/crit-1_t.jpg
-  - type: image
-    width: 536px
-    height: 356px
-    src: /images/portfolio/free-walls/crit-2_m.jpg
-    tiny: /images/portfolio/free-walls/crit-2_t.jpg
-  - type: image
-    width: 239px
-    height: 360px
-    src: /images/portfolio/free-walls/os-1_m.jpg
-    tiny: /images/portfolio/free-walls/os-1_t.jpg
-  - type: image
-    width: 536px
-    height: 356px
-    src: /images/portfolio/free-walls/os-2_m.jpg
-    tiny: /images/portfolio/free-walls/oakes-2_t.jpg
-  - type: image
-    width: 536px
-    height: 356px
-    src: /images/portfolio/free-walls/os-3_m.jpg
-    tiny: /images/portfolio/free-walls/oakes-3_t.jpg

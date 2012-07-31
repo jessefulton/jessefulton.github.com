@@ -1,11 +1,14 @@
-description:
-  Foo bar
-#image:
-#  url: /images/yoogot.jpg
-#  title: Yoogot
-#  alt: Yoogot
+date: 2011
+video:
+  id: 31821503
+thumbnail:
+  url: /images/portfolio/mechatronics/mech-1_s.jpg
+  title: Drawing Machine
+  alt: Drawing Machine
+  width: 224px
+  height: 160px
 layout:    project
-project_description:
+description:
   The Mechatronics Research Group consisted of three students in the Digital Arts + New Media program at the University of California Santa Cruz. We are currently investigating possibilities of various installations concerned with the relationship between air quality and asthma and their socio-political effects.
 
   We are currently researching and prototyping projects using web-based systems, computer vision, and physical computing. The videos above demonstrate a few of the prototypes and proof-of-concepts I have been working on within the group.

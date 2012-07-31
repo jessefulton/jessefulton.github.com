@@ -1,11 +1,14 @@
+date: 2012
 description:
   "Air Quest: A Civic Action Game"
 video:
   id: 38009492
-#image:
-#  url: /images/groupon.jpg
-#  title: Groupon
-#  alt: Groupon
+thumbnail:
+  url: /images/portfolio/air-quest/icon2x.png
+  title: Air Quest
+  alt: Air Quest
+  width: 160px
+  height: 160px
 layout:    project
 project_description:
   Air Quest is an iPad & iPhone game with a purpose. The UC Berkeley Social Apps lab developed this game encourage civic action with regards to air quality conditions in California and across the country. Working with a team across the UCS campuses, I was the lead game developer for the project.

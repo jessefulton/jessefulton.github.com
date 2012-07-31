@@ -1,18 +1,17 @@
-description:
-  Foo bar
+date: 2011
+video:
+  id: 29669344
 #image:
 #  url: /images/yoogot.jpg
 #  title: Yoogot
 #  alt: Yoogot
 layout:    project
-project_description:
+description:
   The Mechatronics Research Group consisted of three students in the Digital Arts + New Media program at the University of California Santa Cruz. We are currently investigating possibilities of various installations concerned with the relationship between air quality and asthma and their socio-political effects.
 
   We are currently researching and prototyping projects using web-based systems, computer vision, and physical computing. The videos above demonstrate a few of the prototypes and proof-of-concepts I have been working on within the group.
 
   Code for the drawing machine can be found on github. Images of finished prints can be seen at Flickr.
 published: true
-short:
-  E
 title:     Interactive Storytelling
-website:   http://www.flickr.com/photos/jessefulton/sets/72157629021647557/
+website:   https://vimeo.com/29676828

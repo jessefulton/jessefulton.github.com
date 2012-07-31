@@ -10,9 +10,14 @@ layout: default
 {% endif %}
 -->
 
+
+<!-- {{ page.bodyclass }} -->
+
+{% if page.bodyclass == 'portfolio' or page.bodyclass == 'portfolio project' %}
 <div class="breadcrumbs">
 	<a id="breadcrumbs-present-and-future" href="/portfolio">portfolio</a> &gt; {{ page.title }}
 </div>
+{% endif %}
 
 <div class="content" class="row">
 {{ content }}

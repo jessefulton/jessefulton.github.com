@@ -1,18 +1,16 @@
-description:
-  "BLARRRRRRGH! FUHHHHkkk"
-video:
-  id: 38009492
-#image:
-#  url: /images/groupon.jpg
-#  title: Groupon
-#  alt: Groupon
-layout:    project
+thumbnail:
+  url: /images/portfolio/art/social-media-surrogate_s.png
+  title: Social Media Surrogate
+  alt: Social Media Surrogate
+  width: 224px
+  height: 160px
+layout: project
 project_description:
-  Last Spring (2011), in response to fee increases at the University of California, a UCSC student created a print of a modified UC seal addressing the issue, subtly replacing the motto of "Let There Be Light" with "Let There Be Fees." I appropriated the logo, and printed it onto about 25 "blue books" (examination books), and then planted the hacked books back in the UCSC Bay Tree Book store.
+  Social Media Surrogate is a conceptual online performance. The performance begins with a 	computer script analyzing a user's previous online activity on a social network (such as Facebook 	or Twitter) to create a data model representative that person's online behavior, interactions and communication style.
   
-  The project is open source, allowing anybody to download and create their own custom blue books, and encouraging participation from students at other university systems.
+  A second script then uses this data model to autonomously generate content and continuously evolve and adapt itself based upon the user's listed interests, current events (such as news feeds and friend's activity), and the user's friends' interests.
+  
+  Once this second script has begun running, the physical person associated with the account discontinues using it and allows the Social Media Surrogate to control their online persona indefinitely.
 published: true
-short:
-  Hacking blue books
-title:     Blue Books
-website:   http://jessefulton.com/blue-books/
+title: Social Media Surrogate
+website: http://socialmediasurrogate.net

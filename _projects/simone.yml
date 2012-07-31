@@ -1,15 +1,21 @@
 description:
-  A game
+  Simone is a memory game for the <a href="http://www.mignonette-game.com/" title="Mignonette Game">Mignonette</a> game kit. It is based on the Milton Bradley game "Simon."
+
+  I created the game (software only.)
+
+  When I wrote this game, I hadn't used the C programming language in over 5 years, nor had I ever done any microcontroller programming. I refreshed my C, learned the Mignonette platform, and							then programmed the game logic, "music," and "graphics," all in about 3 hours.
 video:
   id: 8741488
-#image:
-#  url: /images/groupon.jpg
-#  title: Groupon
-#  alt: Groupon
-layout:    project
+thumbnail:
+  url: /images/portfolio/tech/simone_s.jpg
+  title: Simone
+  alt: Simone
+  width: 224px
+  height: 160px
+layout: project
 project_description:
   Simone something
 published: true
 short: Simone
 title: Simone
-website: http://jessefulton.com/blue-books/
+website: https://github.com/jessefulton/mignonette-simone

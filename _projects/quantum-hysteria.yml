@@ -3,10 +3,12 @@ description:
   ...
 video:
   id: 38009492
-#image:
-#  url: /images/groupon.jpg
-#  title: Groupon
-#  alt: Groupon
+thumbnail:
+  url: /images/portfolio/na.png
+  title: No image available
+  alt: No image available
+  width: 224px
+  height: 160px
 layout:    project
 project_description:
   VJ and videographer for Quantum Hysteria

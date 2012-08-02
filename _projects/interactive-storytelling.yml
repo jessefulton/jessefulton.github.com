@@ -1,10 +1,12 @@
 date: 2011
 video:
   id: 29669344
-#image:
-#  url: /images/yoogot.jpg
-#  title: Yoogot
-#  alt: Yoogot
+thumbnail:
+  url: /images/portfolio/na.png
+  title: No image available
+  alt: No image available
+  width: 224px
+  height: 160px
 layout:    project
 description:
   The Mechatronics Research Group consisted of three students in the Digital Arts + New Media program at the University of California Santa Cruz. We are currently investigating possibilities of various installations concerned with the relationship between air quality and asthma and their socio-political effects.

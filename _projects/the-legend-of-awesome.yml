@@ -1,10 +1,12 @@
 date: 2011
 video:
   id: 34243203
-#image:
-#  url: /images/groupon.jpg
-#  title: Groupon
-#  alt: Groupon
+thumbnail:
+  url: /images/portfolio/na.png
+  title: No image available
+  alt: No image available
+  width: 224px
+  height: 160px
 layout:    project
 description:
   FPO... The Legend of Aesome

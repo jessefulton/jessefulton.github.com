@@ -1,5 +1,11 @@
 date: 2008-2009
 layout:    project
+thumbnail:
+  url: /images/portfolio/na.png
+  title: No image available
+  alt: No image available
+  width: 224px
+  height: 160px
 description:
   FPO
 published: true

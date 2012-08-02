@@ -1,10 +1,12 @@
 date: 2009
 description:
   Emotive Text
-#image:
-#  url: /images/groupon.jpg
-#  title: Groupon
-#  alt: Groupon
+thumbnail:
+  url: /images/portfolio/na.png
+  title: No image available
+  alt: No image available
+  width: 224px
+  height: 160px
 layout:    project
 project_description:
   The <a href="http://jessefulton.com/playground/emote-api">EmoTe API</a> is a web service based on the [Synesketch](http://www.synesketch.krcadinac.com/wiki/index.php?title=Main_Page) Java API, which calculates the various types and levels of emotions in a given passage of text.

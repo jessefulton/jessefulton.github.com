@@ -1,6 +1,12 @@
 date: 2012
 description:
   Fill Me in
+thumbnail:
+  url: /images/portfolio/na.png
+  title: No image available
+  alt: No image available
+  width: 224px
+  height: 160px
 #image:
 #  url: /images/groupon.jpg
 #  title: Groupon

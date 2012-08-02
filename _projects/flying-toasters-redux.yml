@@ -1,6 +1,12 @@
 date: 2012
 video:
   id: 38009492
+thumbnail:
+  url: /images/portfolio/na.png
+  title: No image available
+  alt: No image available
+  width: 224px
+  height: 160px
 # thumbnail:
 #  url: /images/portfolio/blue-books.gif
 #  title: Blue Books

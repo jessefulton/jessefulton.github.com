@@ -1,10 +1,12 @@
 date: 2011
 description:
   UCSC Facebook Game
-#image:
-#  url: /images/groupon.jpg
-#  title: Groupon
-#  alt: Groupon
+thumbnail:
+  url: /images/portfolio/na.png
+  title: No image available
+  alt: No image available
+  width: 224px
+  height: 160px
 layout:    project
 title:     UCSC Wildlife Tracker
 website:   https://apps.facebook.com/140369602412/

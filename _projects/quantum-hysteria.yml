@@ -1,8 +1,16 @@
 date: 2010
 description:
-  ...
-video:
-  id: 38009492
+  VJ and videographer for Quantum Hesteria.
+
+  <a href="http://www.youtube.com/watch?v=xKrml_dv6Ms&feature=autoshare">Quantum Portal</a>
+  
+  <a href="http://www.youtube.com/watch?v=qp9LVSXkt-Y&feature=autoshare">Quantum Microtubules</a>
+
+  <a href="http://www.youtube.com/watch?feature=player_embedded&v=Gz2CJ6pMSc8#!">Quantum Hesteria</a>
+  
+  <a href="http://www.youtube.com/watch?v=BUgSkPmIwJ4&list=UUjitH1fPotAdDH1vUQ0zd0Q&index=1&feature=plcp">Funky Quantum Ion</a>
+#video:
+#  id: 38009492
 thumbnail:
   url: /images/portfolio/na.png
   title: No image available
@@ -10,10 +18,10 @@ thumbnail:
   width: 224px
   height: 160px
 layout:    project
-project_description:
-  VJ and videographer for Quantum Hysteria
+#project_description:
+#  VJ and videographer for Quantum Hysteria
 published: true
-short:
-  Quantum Hysteria
-title:     Quantum Hysteria
-website:   http://jessefulton.com/blue-books/
+#short:
+#  Quantum Hesteria
+title:     Quantum Hesteria
+website:   http://www.drewdetweiler.com/31930/323475/gallery/divine-particles

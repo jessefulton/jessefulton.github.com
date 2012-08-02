@@ -1,13 +1,19 @@
 date: 2008-2009
 layout:    project
 thumbnail:
-  url: /images/portfolio/na.png
+  url: /images/portfolio/web-dev/tmc-1_s.jpg
   title: No image available
   alt: No image available
   width: 224px
   height: 160px
+visuals:
+  - {type: image, width: 536px, height: 386px, src: /images/portfolio/web-dev/tmc-1_m.jpg, tiny: /images/portfolio/web-dev/tmc-1_t.jpg }
+  - {type: image, width: 536px, height: 386px, src: /images/portfolio/web-dev/tmc-2_m.jpg, tiny: /images/portfolio/web-dev/tmc-2_t.jpg }
+  - {type: image, width: 536px, height: 386px, src: /images/portfolio/web-dev/tmc-3_m.jpg, tiny: /images/portfolio/web-dev/tmc-3_t.jpg }
 description:
-  FPO
+  The Monthly Challenge was a project designed to help people try new things each month.Participants devised monthly goals to nudge them out of their "comfort zone" and documented their progress in an online community of blogs and journals. The site has been inactive since September 1, 2009.
+
+  My personal challenges on the site consisted of many failures, but I believe that is oneof the reasons why it was so successful - friends and strangers have adapted this model to create their own versions of The Monthly Challenge.
 published: true
 title: The Monthly Challenge
 website: http://themonthlychallenge.com/

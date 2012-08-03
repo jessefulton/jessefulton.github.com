@@ -1,10 +1,13 @@
 description:
   Foo bar
 date: 2011 &ndash;
+#exhibits:
+#  - Oakes College, Santa Cruz CA
+#  - Open Studios, UCSC
 thumbnail:
   url: /images/portfolio/free-walls/oakes-2_s.jpg
   title: The Free Walls Project
-  alt: Free Wals
+  alt: Free Walls
   width: 224px
   height: 160px
 visuals:

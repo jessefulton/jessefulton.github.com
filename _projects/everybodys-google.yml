@@ -1,21 +1,13 @@
 date: 2012
 description:
-  Fill Me in
+  Everybody's Google
 thumbnail:
   url: /images/portfolio/na.png
   title: No image available
   alt: No image available
   width: 224px
   height: 160px
-#image:
-#  url: /images/groupon.jpg
-#  title: Groupon
-#  alt: Groupon
 layout:    project
-project_description:
-  FPO Project description
+title:  Everybody's Google
 published: true
-short:
-  Everybody's Google
-title:     Everybody's Google
 website:   http://everybodysgoogle.com/

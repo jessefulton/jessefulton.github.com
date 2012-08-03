@@ -12,7 +12,7 @@ thumbnail:
 layout:    project
 project_description:
   Fill me in
-published: true
+published: false
 short:
   Minimalist Multimedia Sampler
 title:     m2s

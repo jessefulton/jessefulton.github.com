@@ -1,0 +1,18 @@
+description:
+  Foo bar
+date: 2011 &ndash;
+exhibits:
+  I've Got Something on Your Mind, DANM MFA show, UCSC
+thumbnail:
+  url: /images/portfolio/webpagesforhumans/captchafy_covers.jpg
+  title: CAPTCHA-fy!
+  alt: CAPTCHA-fy!
+  width: 224px
+  height: 160px
+visuals:
+  - {type: image, width: 536px, height: 356px, src: /images/portfolio/free-walls/captchafy_covers_m.jpg, tiny: /images/portfolio/free-walls/captchafy_covers_t.jpg }
+layout:    project
+project_description:
+  About
+published: true
+title:     CAPTCHA-fy!

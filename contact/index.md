@@ -5,9 +5,11 @@ title: Contact
 
 <h1>Contact me</h1>
 <div class="intro notice">
+	<!--
 	<p>
 		I am currently pursuing an MFA in <a href="http://danm.ucsc.edu/">Digital Arts &amp; New Media</a> at the <a href="http://ucsc.edu/">University of California, Santa Cruz</a>.
 	</p>
+	-->
 	<p>
 		<em>Please do not contact me if you are in need of a web developer or software engineer.</em>
 	</p>

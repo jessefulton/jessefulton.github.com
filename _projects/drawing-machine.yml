@@ -3,8 +3,8 @@ video:
   id: 31821503
 thumbnail:
   url: /images/portfolio/mechatronics/mech-1_s.jpg
-  title: Drawing Machine
-  alt: Drawing Machine
+  title: Drawing Machines
+  alt: Drawing Machines
   width: 224px
   height: 160px
 layout:    project
@@ -16,6 +16,6 @@ description:
   Code for the drawing machine can be found on github. Images of finished prints can be seen at Flickr.
 published: true
 short:
-  Drawing Machine
-title:     Drawing Machine
+  Drawing Machines
+title:     Drawing Machines
 website:   http://www.flickr.com/photos/jessefulton/sets/72157629021647557/

@@ -2,11 +2,13 @@ date: 2012
 description:
   Webpages for Humans
 thumbnail:
-  url: /images/portfolio/na.png
-  title: No image available
-  alt: No image available
+  url: /images/portfolio/webpagesforhumans/nytimes_s.png
+  title: Webpages for Humans
+  alt: Webpages for Humans
   width: 224px
   height: 160px
+visuals:
+  - {type: image, width: 536px, height: 360px, src: /images/portfolio/webpagesforhumans/nytimes_m.png, tiny: /images/portfolio/free-walls/oakes-2_t.jpg }
 layout:    project
 title:     Webpages for Humans
 website:   http://webpagesforhumans.com/

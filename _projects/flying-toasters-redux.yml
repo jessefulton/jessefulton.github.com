@@ -4,11 +4,11 @@ video:
 #exhibits:
 #  GAFFTA (Where 2.0)
 thumbnail:
-  url: /images/portfolio/na.png
-  title: No image available
-  alt: No image available
+  url: /images/portfolio/toasters/screen_s.png
+  title: Flying Toasters Redux
+  alt: Flying Toasters Redux
   width: 224px
-  height: 160px
+  height: 159px
 
 layout:    project
 description:

@@ -2,14 +2,14 @@ date: 2011
 video:
   id: 34243203
 thumbnail:
-  url: /images/portfolio/na.png
-  title: No image available
-  alt: No image available
+  url: /images/portfolio/legend/screen_s.png
+  title: The Legend of Awesome
+  alt: The Legend of Awesome
   width: 224px
   height: 160px
 layout:    project
 description:
-  FPO... The Legend of Aesome
+  FPO... The Legend of Aesome. With Will Eastcott & Lao Akili.
 published: true
 short:
   The Legend of Awesome
